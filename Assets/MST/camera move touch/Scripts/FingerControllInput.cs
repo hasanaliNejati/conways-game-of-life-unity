@@ -33,7 +33,7 @@ public class FingerControllInput : MonoBehaviour, IPointerDownHandler, IPointerU
 
     void Update()
     {
-#if UNITY_EDITOR
+#if UNITY_STANDALONE
         OneFingerScroll();
 #else
         TwoFingerScroll();
